@@ -113,8 +113,12 @@ allprojects {
   group = "org.apache.iceberg"
   version = projectVersion
   repositories {
+    maven {
+      url 'https://maven.aliyun.com/repository/public/'
+    }
     mavenCentral()
-    mavenLocal()
+    /*mavenCentral()
+    mavenLocal()*/
   }
 }
 
